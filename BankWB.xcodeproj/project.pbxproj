@@ -8,10 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		375AE2AE2C2BE1C0009EC1C5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375AE2AD2C2BE1C0009EC1C5 /* main.swift */; };
+		375AE2BB2C2BE1F0009EC1C5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375AE2BA2C2BE1F0009EC1C5 /* main.swift */; };
+		375AE2C02C2BE22A009EC1C5 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375AE2BF2C2BE22A009EC1C5 /* Account.swift */; };
+		375AE2C22C2BE236009EC1C5 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375AE2C12C2BE236009EC1C5 /* Bank.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		375AE2A82C2BE1C0009EC1C5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		375AE2B62C2BE1F0009EC1C5 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +37,21 @@
 /* Begin PBXFileReference section */
 		375AE2AA2C2BE1C0009EC1C5 /* BankWB */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BankWB; sourceTree = BUILT_PRODUCTS_DIR; };
 		375AE2AD2C2BE1C0009EC1C5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		375AE2B82C2BE1F0009EC1C5 /* BankWBCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BankWBCLI; sourceTree = BUILT_PRODUCTS_DIR; };
+		375AE2BA2C2BE1F0009EC1C5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		375AE2BF2C2BE22A009EC1C5 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		375AE2C12C2BE236009EC1C5 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		375AE2A72C2BE1C0009EC1C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		375AE2B52C2BE1F0009EC1C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				375AE2AC2C2BE1C0009EC1C5 /* BankWB */,
+				375AE2B92C2BE1F0009EC1C5 /* BankWBCLI */,
 				375AE2AB2C2BE1C0009EC1C5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				375AE2AA2C2BE1C0009EC1C5 /* BankWB */,
+				375AE2B82C2BE1F0009EC1C5 /* BankWBCLI */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +85,16 @@
 				375AE2AD2C2BE1C0009EC1C5 /* main.swift */,
 			);
 			path = BankWB;
+			sourceTree = "<group>";
+		};
+		375AE2B92C2BE1F0009EC1C5 /* BankWBCLI */ = {
+			isa = PBXGroup;
+			children = (
+				375AE2BA2C2BE1F0009EC1C5 /* main.swift */,
+				375AE2BF2C2BE22A009EC1C5 /* Account.swift */,
+				375AE2C12C2BE236009EC1C5 /* Bank.swift */,
+			);
+			path = BankWBCLI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +117,23 @@
 			productReference = 375AE2AA2C2BE1C0009EC1C5 /* BankWB */;
 			productType = "com.apple.product-type.tool";
 		};
+		375AE2B72C2BE1F0009EC1C5 /* BankWBCLI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 375AE2BC2C2BE1F0009EC1C5 /* Build configuration list for PBXNativeTarget "BankWBCLI" */;
+			buildPhases = (
+				375AE2B42C2BE1F0009EC1C5 /* Sources */,
+				375AE2B52C2BE1F0009EC1C5 /* Frameworks */,
+				375AE2B62C2BE1F0009EC1C5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BankWBCLI;
+			productName = BankWBCLI;
+			productReference = 375AE2B82C2BE1F0009EC1C5 /* BankWBCLI */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +145,9 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					375AE2A92C2BE1C0009EC1C5 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					375AE2B72C2BE1F0009EC1C5 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -111,6 +166,7 @@
 			projectRoot = "";
 			targets = (
 				375AE2A92C2BE1C0009EC1C5 /* BankWB */,
+				375AE2B72C2BE1F0009EC1C5 /* BankWBCLI */,
 			);
 		};
 /* End PBXProject section */
@@ -121,6 +177,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				375AE2AE2C2BE1C0009EC1C5 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		375AE2B42C2BE1F0009EC1C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				375AE2C22C2BE236009EC1C5 /* Bank.swift in Sources */,
+				375AE2BB2C2BE1F0009EC1C5 /* main.swift in Sources */,
+				375AE2C02C2BE22A009EC1C5 /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +329,24 @@
 			};
 			name = Release;
 		};
+		375AE2BD2C2BE1F0009EC1C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		375AE2BE2C2BE1F0009EC1C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -280,6 +364,15 @@
 			buildConfigurations = (
 				375AE2B22C2BE1C0009EC1C5 /* Debug */,
 				375AE2B32C2BE1C0009EC1C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		375AE2BC2C2BE1F0009EC1C5 /* Build configuration list for PBXNativeTarget "BankWBCLI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				375AE2BD2C2BE1F0009EC1C5 /* Debug */,
+				375AE2BE2C2BE1F0009EC1C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
